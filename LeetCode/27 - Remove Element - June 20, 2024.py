@@ -1,15 +1,19 @@
-# class Solution:
-#     def removeElement(self, nums: list[int], val: int) -> int:
-#
-#
-#
-# solution = Solution()
-# print(solution.removeElement([3, 2, 2, 3], 3))
+class Solution:
+    def removeElement(self, nums: list[int], val: int) -> int:
 
-def move(nums, val):
-    x = str(val)
-    print(nums)
+        list_count = []
 
+        for i in nums:
+            if i != val:
+                list_count.append(i)
+
+        return len(list_count)
 
 
-print(move([3,2,2,3], 3))
+
+
+solution = Solution()
+print(solution.removeElement([0,1,2,2,3,0,4,2], 2))
+
+
+
