@@ -1,5 +1,5 @@
 class Solution:
-    def twoSum(self, nums: list[int], target: int) -> list[int]:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
 
         my_map = {}
 
@@ -8,9 +8,5 @@ class Solution:
 
             if diff in my_map:
                 return [my_map[diff], i]
-            my_map[n] = i
-
-
-
-solution = Solution()
-print(solution.twoSum([1, 2, 3, 4], 8))
+            else:
+                my_map[n] == i
